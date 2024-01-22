@@ -1,0 +1,193 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #e6e6e6;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+h2 {
+    color: rgb(70, 91, 255);
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(70, 91, 255);
+    padding-bottom: 16px;
+    font-style: italic;
+}
+
+
+/* header */
+header {
+    background-color: rgb(70, 91, 255);
+    color: white; 
+    font-weight: bold;
+    display: flex;
+    padding: 16px;
+    margin-bottom: 32px;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+.menu li{
+    display: inline;
+    margin-right: 20px;
+}
+
+
+/* sobre */
+#sobre {
+    display: grid;
+    grid-template-columns: 38% 58%;
+    column-gap: 5%;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.sobre img {
+    width: 100%;  
+}
+
+
+/* produtos */
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    column-gap: 4%;
+    justify-content: center;
+}
+
+
+.produto img {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 16px;
+    justify-content: center;
+    display: block;
+}
+
+.produto h3 {
+    margin-bottom: 16px;
+}
+
+
+div .produto {
+    margin: 0 10px;
+}
+
+.produto button {
+    background-color: rgb(70, 91, 255);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 12px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.produto button:hover {
+    background-color: rgb(109, 126, 255);
+}
+
+/* media query parar smartphones */
+@media screen and (max-width: 640px) {
+    /* reset */
+    .container {
+    max-width: 640px;
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    }
+
+    header nav {
+        text-align: left;
+    }
+    
+    /* sobre */
+    #sobre {
+        display: block;
+        overflow-x: hidden;
+        margin-bottom: 40px ;
+        justify-content: center;
+    }
+
+    .sobre img {
+        margin-bottom: 20px;
+    }
+
+
+    /* produtos */
+    .produtos {
+        display: block;
+        justify-content: center;
+    }
+
+    .produto button {
+        margin-bottom: 50px;
+    }
+}
+
+
+/* media query para tablets */
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    /* reset */
+    .container {
+    max-width: 920px;
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    }
+        
+    /* sobre */
+    #sobre {
+    display: block;
+    overflow-x: hidden;
+    margin-bottom: 40px ;
+    justify-content: center;
+    }
+    
+    .sobre img {
+    margin-bottom: 20px;
+    }
+
+    /* produtos */
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        justify-content: center;
+    }
+
+    .produto button {
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+
+
